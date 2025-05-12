@@ -1,0 +1,13 @@
+{% extends "accounts/base.html" %}
+
+{% block content %}
+<h2>Your Profile</h2>
+<div>
+    <p><strong>Username:</strong> {{ profile.user.username }}</p>
+    <p><strong>Email:</strong> {{ profile.user.email }}</p>
+    
+    <h3>Bio</h3>
+    <p>{{ profile.bio|default:"No bio yet" }}</p>
+    
+</div>
+{% endblock %}
